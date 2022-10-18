@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Registration Form</title>
+</head>
+
+<body>
+    <div class="cha">
+
+        <h1>Sign Up Form</h1>
+        <form name="myform" action="welcome.php" onsubmit="return validate()" method="post">
+            <div class="inputs">
+                <label for="firstname">First Name:</label>
+                <input type="text" name="firstname" id="firstname" require placeholder="Enter your first name">
+                <span class = "errors" id="ferrors"></span>
+            </div>
+            <div class="inputs">
+                <label for="lastname">Lastname</label><br>
+                <input type="text" name="lastname" placeholder="Enter your lastname"  />
+                <span class = "errors" id="lerrors"></span>
+            </div>
+
+            <div class="inputs">
+                <label for="address">Address</label><br>
+                <input type="text" name="address" placeholder="Enter your Address" />
+                <span class = "errors"id="Aerrors"></span>
+            </div>
+
+            <div class="inputs">
+                <label for="email">Email</label><br>
+                <input type="text" name="email" placeholder="Enter your Email" />
+                <span class = "errors"id="Eerrors"></span>
+            </div>
+
+            <div class="inputs">
+
+                <label for="password">Password</label><br>
+                <input type="password" name="password" placeholder="Enter your password" />
+                <span class = "errors"id="Perrors"></span>
+            </div>
+
+            <div class="inputs">
+                <label for="confirmpassword">Confirm Password</label>
+                <input type="password" name="confirmpassword" placeholder="Re-type your password" />
+                <span class = "errors" id="CPerrors"></span>
+            </div>
+            <input type="submit" value="Submit" name="submit" id="sub">
+    </div>
+
+    </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
